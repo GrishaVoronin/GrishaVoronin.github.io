@@ -1,0 +1,67 @@
+.page {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    border-bottom: 4px double wheat;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo {
+    width: 30%;
+    height: 30%;
+    min-height: 200px;
+    min-width: 200px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.about_me {
+
+}
+
+.skills {
+    font-size: 24px;
+    font-family: Gill Sans, sans-serif;
+}
+
+.footer {
+    margin-top: 20px;
+    border-top: 4px double wheat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts {
+    border: 4px double wheat;
+    padding: 10px;
+}
+
+.logo_image {
+    max-height: 40px;
+    min-width: 40px;
+    margin-right: 5px;
+}
+
+.title_text {
+    font-style: italic;
+    font-size: 40px;
+}
