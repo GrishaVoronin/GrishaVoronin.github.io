@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-.photo {
+.photos__item {
     width: 30%;
     height: 30%;
     min-height: 200px;
@@ -36,6 +36,10 @@
     font-family: Gill Sans, sans-serif;
 }
 
+.skills__item {
+
+}
+
 .footer {
     margin-top: 20px;
     border-top: 4px double wheat;
@@ -44,6 +48,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer__item {
+    
 }
 
 .contacts {
