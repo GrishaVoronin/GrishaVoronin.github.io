@@ -43,24 +43,23 @@
     <button id="toggle-button">Открыть форму</button>
 
     <!-- Форма обратной связи -->
-    <div id="feedback-form">
+    <div id="feedback-form" >
       <h2>Обратная связь</h2>
       <form>
-        <label for="name">Имя:</label>
+        <label for="name" class="feedback-form-text">Имя:</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
+        <label for="email" class="feedback-form-text">Email:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="message">Сообщение:</label>
+        <label for="message" class="feedback-form-text">Сообщение:</label>
         <textarea id="message" name="message" required></textarea>
 
         <input type="submit" value="Отправить">
       </form>
     </div>
 
-    <script src="feedback_form.js"></script>
-
+    <script src="js/feedback_form.js"></script>
 
 </body>
 </html>

@@ -132,3 +132,7 @@
 #toggle-button:hover {
   background-color: #3e8e41;
 }
+
+.feedback-form-text {
+    color: #000;
+}
