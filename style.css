@@ -1,11 +1,20 @@
 .page {
     background-color: black;
     color: white;
+    margin: 0;
 }
 
 .header {
     border-bottom: 4px double wheat;
     margin-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #000;
+}
+
+.fixed {
+
 }
 
 .name {
@@ -14,6 +23,7 @@
 }
 
 .photos {
+    padding-top: 110px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
