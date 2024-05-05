@@ -13,10 +13,6 @@
     background-color: #000;
 }
 
-.fixed {
-
-}
-
 .name {
     font-style: italic;
     margin-bottom: 10px;
@@ -39,6 +35,7 @@
     margin-bottom: 20px;
     margin-right: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .skills {
@@ -157,6 +154,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
+
 #popup-content {
   color: #000;
   position: relative;
@@ -179,9 +177,71 @@
 }
 
 .zoom-on-hover {
-  transition: transform 0.5s; /* добавляем анимацию */
+  transition: transform 0.5s;
 }
 
 .zoom-on-hover:hover {
-  transform: scale(1.1); /* увеличиваем изображение на 20% */
+  transform: scale(1.1);
+}
+
+.popup-gallery {
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.popup-content {
+  position: relative;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.popup-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup-prev, .popup-next {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-prev:disabled, .popup-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.popup-close {
+  position: absolute;
+  bottom: 400px;
+  right: 0;
+  font-size: 24px;
+  cursor: pointer;
+  color: red;
+  z-index: 10000;
+}
+
+.popup-close:hover {
+  color: #ccc;
 }
