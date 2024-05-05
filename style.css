@@ -69,3 +69,66 @@
     font-style: italic;
     font-size: 40px;
 }
+
+/* Стили для формы обратной связи */
+
+#feedback-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#feedback-form.open {
+  display: block;
+}
+
+#feedback-form h2 {
+  margin-top: 0;
+}
+
+#feedback-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#feedback-form input, #feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#feedback-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#feedback-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Стили для кнопки открытия/закрытия формы */
+
+#toggle-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toggle-button:hover {
+  background-color: #3e8e41;
+}
