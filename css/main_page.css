@@ -1,0 +1,78 @@
+.page {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.header {
+    border-bottom: 4px double wheat;
+    margin-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #000;
+}
+
+.name {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.photos {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photos__item {
+    width: 30%;
+    height: 30%;
+    min-height: 200px;
+    min-width: 200px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.skills {
+    font-size: 24px;
+    font-family: Gill Sans, sans-serif;
+}
+
+.skills__item {
+
+}
+
+.footer {
+    margin-top: 20px;
+    border-top: 4px double wheat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__item {
+
+}
+
+.contacts {
+    border: 4px double wheat;
+    padding: 10px;
+}
+
+.logo_image {
+    max-height: 40px;
+    min-width: 40px;
+    margin-right: 5px;
+}
+
+.title_text {
+    font-style: italic;
+    font-size: 40px;
+}
