@@ -14,56 +14,55 @@
     <title>It's page about me</title>
 </head>
 <body class="page">
-    <header class="header fixed">
-        <h1 class="title_text">Voronin Grigoriy</h1>
-    </header>
-    <section class=photos>
-        <img class="photos__item zoom-on-hover" src="images/car.jpg" alt="image_with_me">
-        <img class="photos__item zoom-on-hover" src="images/prussovskie.jpg" alt="image_with_me">
-        <img class="photos__item zoom-on-hover" src="images/bald.jpg" alt="image_with_me">
-    </section>
-    <div class="popup-gallery">
-      <div class="popup-content">
+<header class="header fixed">
+    <h1 class="title_text">Voronin Grigoriy</h1>
+</header>
+<section class=photos>
+    <img class="photos__item zoom-on-hover" src="images/car.jpg" alt="image_with_me">
+    <img class="photos__item zoom-on-hover" src="images/prussovskie.jpg" alt="image_with_me">
+    <img class="photos__item zoom-on-hover" src="images/bald.jpg" alt="image_with_me">
+</section>
+<div class="popup-gallery">
+    <div class="popup-content">
         <img src="" alt="" class="popup-image">
-      </div>
-      <div class="popup-overlay"></div>
-      <div class="popup-nav">
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-nav">
         <button class="popup-prev">‹</button>
         <button class="popup-next">›</button>
         <button class="popup-close" id="popup-close">x</button>
-      </div>
     </div>
+</div>
 
 
+<section>
+    <h2 class="title_text">About me</h2>
+    <ul class="skills">
+        <li class="skills__item">HSSE MIPT student</li>
+        <li class="skills__item">backend and frontend developer</li>
+        <li class="skills__item">contest enjoyer</li>
+        <li class="skills__item">solidity master</li>
+        <li class="skills__item">basketball player</li>
+    </ul>
+</section>
+<footer class="footer">
+    <p class="footer__item title_text">Contacts</p>
+    <div class="footer__item contacts">
+        <a href="https://t.me/voroningrisha" target="_blank">
+            <img class="logo_image" src="images/contacts/Telegram_logo.png" alt="telegram">
+        </a>
+        <a href="https://github.com/GrishaVoronin" target="_blank">
+            <img class="logo_image" src="images/contacts/Github_logo.png" alt="github">
+        </a>
+    </div>
+</footer>
+<!-- Кнопка открытия/закрытия формы -->
+<button id="toggle-button">Открыть форму</button>
 
-    <section>
-        <h2 class="title_text">About me</h2>
-        <ul class="skills">
-            <li class="skills__item">HSSE MIPT student</li>
-            <li class="skills__item">backend and frontend developer</li>
-            <li class="skills__item">contest enjoyer</li>
-            <li class="skills__item">solidity master</li>
-            <li class="skills__item">basketball player</li>
-        </ul>
-    </section>
-    <footer class="footer">
-        <p class="footer__item title_text">Contacts</p>
-        <div class="footer__item contacts">
-            <a href="https://t.me/voroningrisha" target="_blank">
-                <img class="logo_image" src="images/contacts/Telegram_logo.png" alt="telegram">
-            </a>
-            <a href="https://github.com/GrishaVoronin" target="_blank">
-                <img class="logo_image" src="images/contacts/Github_logo.png" alt="github">
-            </a>
-        </div>
-    </footer>
-    <!-- Кнопка открытия/закрытия формы -->
-    <button id="toggle-button">Открыть форму</button>
-
-    <!-- Форма обратной связи -->
-    <div id="feedback-form" >
-      <h2>Обратная связь</h2>
-      <form>
+<!-- Форма обратной связи -->
+<div id="feedback-form">
+    <h2>Обратная связь</h2>
+    <form>
         <label for="name" class="feedback-form-text">Имя:</label>
         <input type="text" id="name" name="name" required>
 
@@ -74,26 +73,26 @@
         <textarea id="message" name="message" required></textarea>
 
         <input type="submit" value="Отправить">
-      </form>
-    </div>
+    </form>
+</div>
 
-    <h1>Обратный отсчет до окончания бакалавриата</h1>
-  <div id="countdown"></div>
+<h1>Обратный отсчет до окончания бакалавриата</h1>
+<div id="countdown"></div>
 
-  <script src="js/timer.js"></script>
+<script src="js/timer.js"></script>
 
-    <!-- Попап -->
-  <div id="popup">
+<!-- Попап -->
+<div id="popup">
     <div id="popup-content">
-      <h2>Внимание!</h2>
-      <p>Вы еще тут?</p>
-      <button id="close-popup">Закрыть</button>
+        <h2>Внимание!</h2>
+        <p>Вы еще тут?</p>
+        <button id="close-popup">Закрыть</button>
     </div>
-  </div>
+</div>
 
-  <script src="js/popup.js"></script>
-    <script src="js/feedback_form.js"></script>
-    <script src="js/galery.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/feedback_form.js"></script>
+<script src="js/galery.js"></script>
 
 </body>
 </html>
