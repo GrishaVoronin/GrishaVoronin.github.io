@@ -15,6 +15,11 @@ const feedbackForm = document.getElementById('feedback-form');
 const submitButton = feedbackForm.querySelector('button[id="submit"]');
 
 toggleButton.addEventListener('click', () => {
+  if (submitButton.classList.contains('button-fail')) {
+    submitButton.classList.remove('button-fail');
+    submitButton.textContent = 'Отправить';
+    submitButton.disabled = false;
+  }
   submitButton.classList.add('button-success')
   feedbackForm.classList.toggle('open');
   toggleButton.textContent = feedbackForm.classList.contains('open') ? 'Закрыть форму' : 'Открыть форму';
