@@ -1,0 +1,43 @@
+.rain-button {
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: blue;
+  cursor: pointer;
+  color: var(--text);
+  border-radius: 10px;
+}
+
+.rain {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/rain.png);
+}
+
+.rain_open {
+  display: block;
+}
+
+.rain_animation {
+  animation: rain 1.5s linear infinite;
+}
+
+.rain {
+  height: 100vh;
+  background: url("../images/rain.png");
+  animation: rain 0.3s linear infinite;
+}
+
+@keyframes rain {
+  0% {
+    background-position: -10% -10%;
+  }
+  100% {
+    background-position: 20% 100%;
+  }
+}
