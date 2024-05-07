@@ -62,3 +62,26 @@
 .feedback-form-text {
     color: #000;
 }
+
+#submit {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-loading {
+    background-color: #FFA500;
+    cursor: wait;
+}
+
+.button-success {
+    background-color: #4CAF50;
+    cursor: default;
+}
+
+.button-fail {
+    background-color: red;
+    cursor: default;
+}
